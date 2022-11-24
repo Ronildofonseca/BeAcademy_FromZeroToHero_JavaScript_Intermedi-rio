@@ -1,4 +1,4 @@
-class cadidates{
+class Candidates{
     constructor(firstName, surName, cpf){
         this.firstName = firstName;
         this.surName = surName;
@@ -6,7 +6,7 @@ class cadidates{
     }
 }
 
-class Masc extends candidates{
+class Masc extends Candidates{
     constructor(firstName, surName, cpf, reservista){
         super(firstName, surName, cpf)
         this.reservista = reservista
@@ -14,3 +14,6 @@ class Masc extends candidates{
 }
 
 const candidate1 = new Masc( 'Marcelo', 'Vasques', 123456789, true)
+const candidate2 = new Candidates( 'Maria', 'fulana', 1111111111)
+
+console.log(candidate1, candidate2)
